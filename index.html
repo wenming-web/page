@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		#paging span {
+			padding: 5px 10px;
+			background-color: #cccccc;
+			border-radius: 6px;
+			color: white;
+			margin: 5px;
+		}
+
+		#paging span.on {
+			color: red
+		}
+		#paging input {
+			border: none;
+			outline: none;
+			background-color: red;
+			padding: 5px 10px;
+			border-radius: 4px;
+			margin: 0 5px;
+			color: white;
+			font-size: 12px;
+		}
+
+		#paging input[type='text'] {
+			background: white;
+			border: 1px solid #cccccc;
+			color: #999999
+		}
+ 	</style>
+</head>
+<body>
+	<ul>
+		<li>item01</li>
+		<li>item02</li>
+		<li>item03</li>
+		<li>item04</li>
+		<li>item05</li>
+		<li>item06</li>
+		<li>item07</li>
+		<li>item08</li>
+		<li>item09</li>
+		<li>item10</li>
+		<li>item11</li>
+		<li>item12</li>
+		<li>item13</li>
+		<li>item14</li>
+		<li>item15</li>
+		<li>item16</li>
+		<li>item17</li>
+		<li>item18</li>
+		<li>item19</li>
+		<li>item20</li>
+	</ul>
+	<div id="paging"></div>
+	<script src="page.js"></script>
+	<script>
+		var paging = document.getElementById("paging")
+		pageList = document.querySelectorAll("ul li")
+		goPage(5,pageList,paging);
+	</script>
+</body>
+</html>
